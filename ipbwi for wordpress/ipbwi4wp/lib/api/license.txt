@@ -1,0 +1,14 @@
+This is IPBWI API v4 extended edition. This means, that this package has it's own, probritary license:
+
+	Invision Power Board Website Integration (IPBWI) API v4 extended edition
+		is an application programming interface (API) allowing to develop own
+		PHP software connected to IP.board 4.x.
+	Code (c) 2016 Matthias Reuter
+	Website: https://straightvisions.com/
+
+	Please note: This is no free software. You need to purchase a license
+	to legaly use this software. If you are using the trial version of this
+	software, you have to buy a license if the trial period expires.
+
+
+Please visit https://ipbwi.com/ for more information about developing with IPBWI.

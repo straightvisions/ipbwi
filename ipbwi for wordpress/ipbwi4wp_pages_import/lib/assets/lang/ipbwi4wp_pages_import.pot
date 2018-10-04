@@ -1,0 +1,169 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: IPBWI for WordPress v4 - Pages Import\n"
+"POT-Creation-Date: 2016-06-18 19:22+0200\n"
+"PO-Revision-Date: 2016-06-18 19:22+0200\n"
+"Last-Translator: Matthias Reuter <info@straightvisions.com>\n"
+"Language-Team: Matthias Reuter <info@straightvisions.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: ../../..\n"
+"X-Poedit-WPHeader: ipbwi4wp_pages_import.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: lib/assets/tpl/pages_import.php:8 lib/modules/settings.php:133
+#: lib/modules/settings.php:134 lib/modules/settings.php:160
+msgid "Pages Import"
+msgstr ""
+
+#: lib/assets/tpl/pages_import.php:9
+msgid "Just import all your IP.pages articles to your WordPress site."
+msgstr ""
+
+#: lib/assets/tpl/pages_import.php:29
+msgid "Total Databases:"
+msgstr ""
+
+#: lib/assets/tpl/pages_import.php:32
+msgid "Database selected:"
+msgstr ""
+
+#: lib/assets/tpl/pages_import.php:33
+msgid "Total Records:"
+msgstr ""
+
+#: lib/assets/tpl/pages_import.php:34
+msgid "Records per import cycle:"
+msgstr ""
+
+#: lib/assets/tpl/pages_import.php:35
+msgid "Total cycles:"
+msgstr ""
+
+#: lib/assets/tpl/pages_import.php:43
+msgid "Import Settings"
+msgstr ""
+
+#: lib/assets/tpl/pages_import.php:72
+msgid "Save Settings"
+msgstr ""
+
+#: lib/assets/tpl/pages_import.php:77 lib/assets/tpl/pages_import.php:80
+msgid "Start Import"
+msgstr ""
+
+#: lib/assets/tpl/pages_import.php:78
+msgid ""
+"Please do not close browser windows or tab until import has been finished."
+msgstr ""
+
+#: lib/assets/tpl/pages_import.php:82
+msgid "Continue Import from Cycle"
+msgstr ""
+
+#: lib/assets/tpl/pages_import.php:86
+msgid ""
+"Your SEO department will thank us for these 301 redirect lists we are "
+"generating during import."
+msgstr ""
+
+#: lib/modules/ajax.php:142
+msgid "Page Records"
+msgstr ""
+
+#: lib/modules/ajax.php:156 lib/modules/ajax.php:182
+msgid "error occured:"
+msgstr ""
+
+#: lib/modules/ajax.php:162
+msgid "error occured - no valid post ID returned:"
+msgstr ""
+
+#: lib/modules/ajax.php:171
+msgid "successfully imported."
+msgstr ""
+
+#: lib/modules/ajax.php:174
+msgid "already exists."
+msgstr ""
+
+#: lib/modules/ajax.php:177
+msgid "comments imported."
+msgstr ""
+
+#: lib/modules/ajax.php:184
+msgid "Featured Image not created"
+msgstr ""
+
+#: lib/modules/ajax.php:188
+msgid "Featured Image already exists."
+msgstr ""
+
+#: lib/modules/ajax.php:190
+msgid "Featured Image set successfully."
+msgstr ""
+
+#: lib/modules/ajax.php:192
+msgid "Featured Image not added, something went wrong."
+msgstr ""
+
+#: lib/modules/ajax.php:225
+msgid "No Content in Pages Database"
+msgstr ""
+
+#: lib/modules/ajax.php:229
+msgid "You are not allowed to do this."
+msgstr ""
+
+#: lib/modules/settings.php:28
+msgid "IPS Pages Database"
+msgstr ""
+
+#: lib/modules/settings.php:31
+msgid "Select a Database for Import"
+msgstr ""
+
+#: lib/modules/settings.php:35
+msgid "WordPress Post Type"
+msgstr ""
+
+#: lib/modules/settings.php:38
+msgid "Select a WordPress Post Type for Import"
+msgstr ""
+
+#: lib/modules/settings.php:161
+msgid "Support"
+msgstr ""
+
+#: lib/modules/settings.php:162
+msgid "Documentation"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "IPBWI for WordPress v4 - Pages Import"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://ipbwi.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Bulk import pages from IP.pages to WordPress"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Matthias Reuter"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://straightvisions.com"
+msgstr ""

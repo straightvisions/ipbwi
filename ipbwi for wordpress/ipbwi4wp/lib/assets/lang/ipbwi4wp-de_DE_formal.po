@@ -1,0 +1,353 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: IPBWI for WordPress v4\n"
+"POT-Creation-Date: 2016-06-18 19:08+0200\n"
+"PO-Revision-Date: 2016-06-18 19:09+0200\n"
+"Last-Translator: Matthias Reuter <info@straightvisions.com>\n"
+"Language-Team: Matthias Reuter <info@straightvisions.com>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: ../../..\n"
+"X-Poedit-WPHeader: ipbwi4wp.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: lib/assets/tpl/extensions.php:8
+msgid "Unleash the full power!"
+msgstr "Enfesseln Sie die volle Kraft!"
+
+#: lib/assets/tpl/extensions.php:9
+msgid "We provide additional feature extensions on a modular level."
+msgstr ""
+"Wir bieten zusätzliche Funktionserweiterungen auf einer modularen Ebene."
+
+#: lib/assets/tpl/settings_sso.php:8
+msgid "IPBWI at your service"
+msgstr "IPBWI zu Ihren Diensten"
+
+#: lib/assets/tpl/settings_sso.php:9
+msgid ""
+"With your purchase you actively support further development, so expect "
+"further improvements and new features in future. We are thrilled to give you "
+"the best SSO experience on market between IP.board and WordPress."
+msgstr ""
+"Mit Ihrem Kauf unterstützen Sie die weitere Entwicklung, freuen Sie sich "
+"also in Zukunft auf weitere Verbesserungen und neue Funktionen. Wir sind "
+"begeistert Ihnen die beste SSO Erfahrung zwischen IP.board und WordPress zu "
+"bieten, die am Markt verfügbar ist."
+
+#: lib/assets/tpl/settings_sso.php:10
+msgid ""
+"This WordPress plugin is designed to give you maximum flexibility by "
+"avoiding settings overload. If you need additional support or update save "
+"feature development, don't hesitate to"
+msgstr ""
+"Diesee WordPress Erweiterung wurde dazu entwickelt, Ihnen die maximale "
+"Flexibilität zu bieten, ohne Sie mit unnötigen Einstellungsmöglichkeiten zu "
+"überfrachten. Falls Sie zusätzlichen Support oder updatesichere neue "
+"Funktionen benötigen, zögern Sie nicht, uns zu"
+
+#: lib/assets/tpl/settings_sso.php:10
+msgid "contact us"
+msgstr "kontaktieren"
+
+#: lib/assets/tpl/settings_sso.php:18
+msgid "SSO connection is configured correctly."
+msgstr "SSO Verbindung erfolgreich konfiguriert."
+
+#: lib/assets/tpl/settings_sso.php:22
+msgid "Admin Account Status"
+msgstr "Admin Kontostatus"
+
+#: lib/assets/tpl/settings_sso.php:23
+msgid "WordPress Account Data:"
+msgstr "WordPress Kontodaten:"
+
+#: lib/assets/tpl/settings_sso.php:27
+#, php-format
+msgid ""
+"Account with same emailaddress found in IP.board, but IP.board username "
+"(%1$s) differs from WordPress username (%2$s). This will result in non-"
+"working SSO. Please synchronize login-names manually to solve this issue."
+msgstr ""
+"Es wurde in IP.board ein Konto mit der gleichen Emailaddresse gefunden, "
+"jedoch weicht der IP.board Benutzername (%1$s)  from WordPress Benutzernamen "
+"(%2$s) ab. Dies führt zu einem nicht funktionierenden SSO. Bitte "
+"synchronisieren Sie die Loginnamen manuell, um dieses Problem zu lösen."
+
+#: lib/assets/tpl/settings_sso.php:29
+#, php-format
+msgid ""
+"Congratulations, your admin-account (%1$s) with email address (%2$s) in IP."
+"board is synced with this WordPress installation."
+msgstr ""
+"Glückwunsch, Ihr Adminkonto (%1$s) mit der Emailadresse (%2$s) ist "
+"synchronisiert mit dieser WordPress Installation."
+
+#: lib/assets/tpl/settings_sso.php:32
+#, php-format
+msgid ""
+"There is no userracount with email (%1$s) in IP.board. User (%2$s) will be "
+"registered in IP.board and all slaves upon next login in this WordPress "
+"installation."
+msgstr ""
+"Es gibt keinen Benutzeraccount mit der Emailadresse (%1$s) in IP.board. Der "
+"Nutzer (%2$s) wird beim nächsten Login in dieser WordPress-Installation "
+"sowohl bei IP.board, als auch allen Slaves registriert."
+
+#: lib/assets/tpl/settings_sso.php:39
+msgid ""
+"SSO connection cannot be established. Please correct your settings and try "
+"again."
+msgstr ""
+"SSO Verbindung konnte nicht hergestellt werden. Bitte korrigieren Sie Ihre "
+"Einstellungen und versuchen Sie es nochmal."
+
+#: lib/assets/tpl/settings_sso.php:43
+msgid "IP.board REST API connection status"
+msgstr "IP.board REST API Verbindungsstatus"
+
+#: lib/assets/tpl/settings_sso.php:46
+msgid "Community Name:"
+msgstr "Community Name:"
+
+#: lib/assets/tpl/settings_sso.php:47
+msgid "Community URL:"
+msgstr "Community URL:"
+
+#: lib/assets/tpl/settings_sso.php:48
+msgid "IPS Version:"
+msgstr "IPS Version:"
+
+#: lib/assets/tpl/settings_sso.php:52
+msgid "IP.board IPBWI extended REST API connection status"
+msgstr "IP.board IPBWI Extended REST API Verbindungsstatus"
+
+#: lib/assets/tpl/settings_sso.php:55
+msgid "Application ID:"
+msgstr "Application ID:"
+
+#: lib/assets/tpl/settings_sso.php:56
+msgid "Application Version:"
+msgstr "Application Version:"
+
+#: lib/assets/tpl/settings_sso.php:57
+msgid "Application Long Version:"
+msgstr "Application lange Version:"
+
+#: lib/assets/tpl/settings_sso.php:58
+msgid "Application Directory:"
+msgstr "Application Verzeichnis:"
+
+#: lib/assets/tpl/settings_sso.php:63 lib/assets/tpl/settings_sso.php:66
+msgid ""
+"You have not saved any settings yet - please fill out the settings form below"
+msgstr ""
+"Sie haben bisher noch keine Einstellungen gespeichert - bitte füllen Sie das "
+"folgende Einstellungsformular aus."
+
+#: lib/assets/tpl/settings_sso.php:70 lib/modules/settings.php:184
+#: lib/modules/settings.php:237
+msgid "SSO Settings"
+msgstr "SSO Einstellungen"
+
+#: lib/assets/tpl/settings_sso.php:76
+msgid "REST Settings"
+msgstr "REST Einstellungen"
+
+#: lib/assets/tpl/settings_sso.php:77
+msgid "In order to get SSO work properly, you need to follow these steps:"
+msgstr ""
+"Damit SSO fehlerfrei funktioniert, müssen Sie den folgenden Schritten folgen:"
+
+#: lib/assets/tpl/settings_sso.php:79
+msgid ""
+"Go to IP.board Admin CP » System » Site Features » Applications » Install "
+"and upload file ipbwi.tar. This file can be found within the zip-archive of "
+"this plugin."
+msgstr ""
+"Gehen Sie zu IP.board Admin CP » System » Site Features » Applications » "
+"Install und laden Sie die Datei ipbwi.tar hoch. Diese Datei finden Sie im "
+"zip-Archiv dieses Plugins."
+
+#: lib/assets/tpl/settings_sso.php:80
+msgid ""
+"Go to IP.board Admin CP » System » Site Features » REST API and create a new "
+"API Key."
+msgstr ""
+"Gehen Sie zu IP.board Admin CP » System » Site Features » REST API und "
+"erstellen Sie einen neuen API Key."
+
+#: lib/assets/tpl/settings_sso.php:81
+msgid "Select \"Access\" for all endpoints and save the new API Key."
+msgstr ""
+"Wählen Sie \"Access\" für alle endpoints und speichern Sie den neuen API Key."
+
+#: lib/assets/tpl/settings_sso.php:82
+msgid "Insert API Key in form field below."
+msgstr "Fügen Sie den API Key in das folgende Formularfeld ein."
+
+#: lib/assets/tpl/settings_sso.php:89
+msgid "Advanced Settings"
+msgstr "Erweiterte Einstellungen"
+
+#: lib/assets/tpl/settings_sso.php:90
+msgid "You can adjust behavior of IPBWI more granular here."
+msgstr "Sie können hier IPBWI noch feiner konfigurieren."
+
+#: lib/assets/tpl/settings_sso.php:97
+msgid "Network Settings"
+msgstr "Netzwerk Einstellungen"
+
+#: lib/assets/tpl/settings_sso.php:98
+msgid "This site is part of a WordPress Network (MU)."
+msgstr "Diese Seite ist Teil eines WordPress Networks (MU)."
+
+#: lib/assets/tpl/settings_sso.php:106
+msgid "Save Settings"
+msgstr "Einstellungen speichern"
+
+#: lib/modules/settings.php:28
+msgid "IP.board Base URL"
+msgstr "IP.board Base URL"
+
+#: lib/modules/settings.php:31
+msgid ""
+"The base URL to your IP.board installation. Must include a trailing slash."
+msgstr ""
+"Die Base URL zu Ihrer IP.board Installation. Vergessen Sie nicht den Slash "
+"am Ende der URL."
+
+#: lib/modules/settings.php:35
+msgid "Master IPS Connect Key"
+msgstr "Master IPS Connect Key"
+
+#: lib/modules/settings.php:38
+msgid "Go to IP.board ACP » System » Settings » Login Handlers"
+msgstr "Gehen Sie zu IP.board ACP » System » Settings » Login Handlers"
+
+#: lib/modules/settings.php:43
+msgid "IPS REST API Key"
+msgstr "IPS REST API Key"
+
+#: lib/modules/settings.php:46
+msgid "Go to IP.board ACP » System » Site Features » REST API"
+msgstr "Gehen Sie zu IP.board ACP » System » Site Features » REST API"
+
+#: lib/modules/settings.php:51
+msgid "Activate synchronized member deletion"
+msgstr "Aktiviere synchronisierte Mitgliederlöschung"
+
+#: lib/modules/settings.php:54
+msgid ""
+"To avoid any unwanted data lost, we make member account deletion "
+"synchronization as opt in feature. By activating this checkbox, deletion of "
+"a member account in IP.board will result in deletion of member in WordPress "
+"and vice versa."
+msgstr ""
+"Um ungewollten Datenverlust zu vermeiden, haben wir die Synchronisation des "
+"Löschens von Mitgliederkonten als optionale Funktion integriert. Wenn Sie "
+"dieses Auswahlfeld aktivieren, erwirkt ein Löschen eines Nutzerkontos in IP."
+"board auch das Löschen des dazugehörigen Accounts in WordPress - und "
+"umgekehrt."
+
+#: lib/modules/settings.php:58
+msgid "Reassign WordPress Posts upon deletion"
+msgstr "Neuzuweisung von WordPress Beiträgen bei Nutzerlöschung"
+
+#: lib/modules/settings.php:61
+msgid ""
+"When Synchronized member deletion is activated and a member is going to be "
+"deleted through IP.board, you can set a WP user loginname here to reassign "
+"all WP posts to that account rather than deleting them."
+msgstr ""
+"Wenn die synchronisierte Nutzerlöschung aktiviert ist und ein Mitglied via "
+"IP.board gelöscht wird, können Sie hier einen WordPress Loginnamen eingeben, "
+"um alle WordPress Beiträge diesem zuzuweisen, statt sie zu löschen."
+
+#: lib/modules/settings.php:66
+msgid "Register to all sites"
+msgstr "Auf allen Seiten registrieren"
+
+#: lib/modules/settings.php:69
+msgid ""
+"Register new users to whole blog network (all sites) instead of just the "
+"current site only."
+msgstr ""
+"Registriere neue Benutzer im gesamten Blog Netzwerk (alle Seiten), anstatt "
+"nur auf dieser Seite."
+
+#: lib/modules/settings.php:185
+msgid "IPBWI4WP"
+msgstr "IPBWI4WP"
+
+#: lib/modules/settings.php:193 lib/modules/settings.php:194
+msgid "SSO"
+msgstr "SSO"
+
+#: lib/modules/settings.php:201 lib/modules/settings.php:202
+msgid "Extensions"
+msgstr "Erweiterungen"
+
+#: lib/modules/settings.php:238
+msgid "Support"
+msgstr "Unterstützung"
+
+#: lib/modules/settings.php:239
+msgid "Documentation"
+msgstr "Dokumentation"
+
+#: lib/modules/sso_by_ipb.php:57
+msgid "Security key mismatch."
+msgstr "Sicherheitsschlüssel nicht korrekt."
+
+#: lib/modules/sso_by_wp.php:243
+msgid "<strong>ERROR</strong>: Invalid username."
+msgstr "<strong>Fehler</strong>: falscher Benutzername."
+
+#: lib/modules/sso_by_wp.php:245 lib/modules/sso_by_wp.php:259
+#: lib/modules/sso_by_wp.php:277
+msgid "Lost your password?"
+msgstr "Passwort vergessen?"
+
+#: lib/modules/sso_by_wp.php:257
+msgid "<strong>ERROR</strong>: Invalid email address."
+msgstr "<strong>Fehler</strong>: ungültige Emailadresse."
+
+#. translators: %s: user name
+#: lib/modules/sso_by_wp.php:273
+#, php-format
+msgid ""
+"<strong>ERROR</strong>: The password you entered for the username %s is "
+"incorrect."
+msgstr ""
+"<strong>Fehler</strong>: Das eingegebene Passwort für den Nutzer %s ist "
+"falsch."
+
+#. Plugin Name of the plugin/theme
+msgid "IPBWI for WordPress v4"
+msgstr "IPBWI for WordPress v4"
+
+#. Plugin URI of the plugin/theme
+msgid "https://ipbwi.com"
+msgstr "https://ipbwi.com"
+
+#. Description of the plugin/theme
+msgid "Single Sign On for WordPress and IP.board"
+msgstr "Single Sign On für WordPress und IP.board"
+
+#. Author of the plugin/theme
+msgid "Matthias Reuter"
+msgstr "Matthias Reuter"
+
+#. Author URI of the plugin/theme
+msgid "https://straightvisions.com"
+msgstr "https://straightvisions.com"

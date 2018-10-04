@@ -1,0 +1,247 @@
+<?php
+	/**
+	 * @author			Matthias Reuter
+	 * @package			hooks
+	 * @desc			Rename this file to hooks.php and insert custom incoming code here which is going to be triggered when certain actions are called.
+	 * @copyright		2007-2017 Matthias Reuter
+	 * @link			http://ipbwi.com/
+	 * @since			4.1.4
+	 * @license			This is no free software. See license.txt or https://ipbwi.com
+	 */
+	class ipbwi_hooks extends ipbwi{
+		public $ipbwi			= null;
+		/**
+		 * @desc			Loads other classes of package
+		 * @author			Matthias Reuter
+		 * @since			4.0
+		 * @ignore
+		 */
+		public function __construct(ipbwi $ipbwi){
+			$this->ipbwi		= $ipbwi; // loads common classes
+		}
+		public function init(){
+			try{
+				if( // security key check
+					(isset($_REQUEST['id']) && $_REQUEST['key'] == md5(md5(ipbwi_IPS_CONNECT_SLAVE_URL).$_REQUEST['id'])) // ID delivered
+					|| $_REQUEST['key'] == md5(ipbwi_IPS_CONNECT_SLAVE_URL) // no ID delivered
+				){
+					if($_REQUEST['do'] == 'register'){
+						$this->register($_REQUEST['id'], $_REQUEST['name'], $_REQUEST['email'], $_REQUEST['pass_hash'], $_REQUEST['pass_salt']);
+					}else{
+						if($_REQUEST['do'] != 'delete'){
+							$this->migrate($_REQUEST['id']); // migrate user to site if not exists yet
+						}
+						
+						if($_REQUEST['do'] == 'crossLogin'){
+							$this->login($_REQUEST['id']);
+						}elseif($_REQUEST['do'] == 'logout'){
+							$this->logout();
+						}elseif($_REQUEST['do'] == 'delete'){
+							$this->delete($_REQUEST['id']);
+						}elseif($_REQUEST['do'] == 'changeEmail'){
+							$this->change_email($_REQUEST['id'],$_REQUEST['email']);
+						}elseif($_REQUEST['do'] == 'changeName'){
+							$this->change_name($_REQUEST['id'],$_REQUEST['name']);
+						}elseif($_REQUEST['do'] == 'changePassword'){
+							$this->change_password($_REQUEST['id'],$_REQUEST['pass_hash'],$_REQUEST['pass_salt']);
+						}elseif($_REQUEST['do'] == 'validate'){
+							$this->validate($_REQUEST['id']);
+						}elseif($_REQUEST['do'] == 'IPS\\forums\\ipbwi_hook_ipbwi_forums_topic::save'){
+							$this->save('post',json_decode($_REQUEST['data']));
+						}elseif($_REQUEST['do'] == 'IPS\\forums\\Topic\\ipbwi_hook_ipbwi_forums_topic_post::save'){
+							$this->save('topic',json_decode($_REQUEST['data']));
+						}elseif($_REQUEST['do'] == 'IPS\\forums\\ipbwi_hook_ipbwi_forums_topic::modAction'){
+							$this->modAction('topic',json_decode($_REQUEST['data']));
+						}elseif($_REQUEST['do'] == 'IPS\\forums\\Topic\\ipbwi_hook_ipbwi_forums_topic_post::modAction'){
+							$this->modAction('post',json_decode($_REQUEST['data']));
+						}elseif($_REQUEST['do'] == 'IPS\\ipbwi_hook_ipbwi_member::set_pp_main_photo'){
+							$this->photo(json_decode($_REQUEST['data']));
+						}elseif($_REQUEST['do'] == 'IPS\\ipbwi_hook_ipbwi_member::save'){
+							$this->save('member',json_decode($_REQUEST['data']));
+						}else{
+							echo $_REQUEST['do'].' not found as trigger';
+						}
+					}
+				}else{
+					echo 'Security key mismatch.';
+				}
+				
+				if($_REQUEST['returnTo']){
+					header('Location: '.$_REQUEST['returnTo']); 
+					die();
+				}
+			}catch(Throwable $t){
+				error_log('Type Error, line '.$t->getLine().': ' .$t->getMessage(), 3, IPBWI4WP_DIR.'log.txt');
+				echo 'Type Error, line '.$t->getLine().': ' .$t->getMessage();
+			}
+		}
+		/**
+		 * @desc			login a user when sent from IPB
+		 * @param	int		$ipb_member_id IP.board member ID
+		 * @return	void
+		 * @author			Matthias Reuter
+		 * @since			4.1.4
+		 */
+		public function login($ipb_member_id){
+			
+		}
+		/**
+		 * @desc			logout a user when sent from IPB
+		 * @return	void
+		 * @author			Matthias Reuter
+		 * @since			4.1.4
+		 */
+		public function logout(){
+
+		}
+		/**
+		 * @desc			register a user when sent from IPB
+		 * @param	int		$ipb_member_id IP.board member ID
+		 * @param	int		$name IP.board member name
+		 * @param	int		$email IP.board member email
+		 * @param	int		$pass_hash IP.board member pass hash
+		 * @param	int		$pass_salt IP.board member pass salt
+		 * @return	mixed	true if member already exists, user ID if member has been successfully created, WP error object in failure
+		 * @author			Matthias Reuter
+		 * @since			4.1.4
+		 */
+		public function register($ipb_member_id, $name, $email, $pass_hash, $pass_salt){
+			
+		}
+		/**
+		 * @desc			migrate a user when sent from IPB
+		 * @param	int		$ipb_member_id IP.board member ID
+		 * @return	mixed	true if member already exists, user ID if member has been successfully created, WP error object in failure
+		 * @author			Matthias Reuter
+		 * @since			4.1.4
+		 */
+		public function migrate($ipb_member_id){
+			// you should check whether member with given ID already exists in your system.
+			// You may use IPBWI API to get email address of given user from IPS and check against your site if email address already exists in your system.
+		}
+		
+		/**
+		 * @desc			delete a user when sent from IPB
+		 * @param	int		$ipb_member_id IP.board member ID
+		 * @return	void
+		 * @author			Matthias Reuter
+		 * @since			4.1.4
+		 */
+		public function delete($ipb_member_id){
+			
+		}
+		/**
+		 * @desc			change a user's email when sent from IPB
+		 * @param	int		$ipb_member_id IP.board member ID
+		 * @param	int		$email IP.board member email
+		 * @return	mixed	WP user ID on success, otherwise WP error object
+		 * @author			Matthias Reuter
+		 * @since			4.1.4
+		 */
+		public function change_email($ipb_member_id, $email){
+
+		}
+		/**
+		 * @desc			change a user's name when sent from IPB
+		 * @param	int		$ipb_member_id IP.board member ID
+		 * @param	int		$name IP.board member name
+		 * @return	mixed	WP user ID on success, otherwise WP error object
+		 * @author			Matthias Reuter
+		 * @since			4.1.4
+		 */
+		public function change_name($ipb_member_id, $name){
+
+		}
+		/**
+		 * @desc			change a user's password when sent from IPB
+		 * @param	int		$ipb_member_id IP.board member ID
+		 * @param	int		$pass_hash IP.board member pass hash
+		 * @param	int		$pass_salt IP.board member pass salt
+		 * @return	void
+		 * @author			Matthias Reuter
+		 * @since			4.1.4
+		 */
+		public function change_password($ipb_member_id, $pass_hash, $pass_salt){
+
+		}
+		/**
+		 * @desc			validate user when sent from IPB
+		 * @param	int		$ipb_member_id IP.board member ID
+		 * @return	void
+		 * @author			Matthias Reuter
+		 * @since			4.1.4
+		 */
+		public function validate($ipb_member_id){
+
+		}
+		/**
+		 * @desc			save
+		 * @param	string	$type Item Type
+		 * @param	object	$data Hook Data
+		 * @return	void
+		 * @author			Matthias Reuter
+		 * @since			4.1.4
+		 */
+		public function save($type,$data){
+			if($type == 'post'){
+				
+			}elseif($type == 'topic'){
+				
+			}elseif($type == 'member'){
+				
+			}
+		}
+		/**
+		 * @desc			modAction
+		 * @param	string	$type Item Type
+		 * @param	object	$data Hook Data
+		 * @return	void
+		 * @author			Matthias Reuter
+		 * @since			4.1.4
+		 */
+		public function modAction($type,$data){
+			if($type == 'post'){
+				if($data['action'] == 'hide'){
+					
+				}elseif($data['action'] == 'unhide'){
+					
+				}elseif($data['action'] == 'delete'){
+					
+				}elseif($data['action'] == 'approve'){
+					
+				}
+			}elseif($type == 'topic'){
+				if($data['action'] == 'feature'){
+					
+				}elseif($data['action'] == 'unfeature'){
+					
+				}elseif($data['action'] == 'pin'){
+					
+				}elseif($data['action'] == 'unpin'){
+					
+				}elseif($data['action'] == 'hide'){
+					
+				}elseif($data['action'] == 'unhide'){
+					
+				}elseif($data['action'] == 'lock'){
+					
+				}elseif($data['action'] == 'unlock'){
+					
+				}elseif($data['action'] == 'move'){
+					
+				}elseif($data['action'] == 'merge'){
+					
+				}elseif($data['action'] == 'delete'){
+					
+				}elseif($data['action'] == 'approve'){
+					
+				}
+			}
+		}
+		public function photo($data){
+			if($data->photo_path != ''){
+				
+			}
+		}
+	}
+?>

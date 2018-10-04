@@ -1,0 +1,8 @@
+{
+    "admin": {
+        "advanced": {
+            "default_controller": "hooks",
+            "protected": 0
+        }
+    }
+}

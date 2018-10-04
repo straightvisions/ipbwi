@@ -1,0 +1,18 @@
+[
+    {
+        "key": "ipbwi_hooks_activate_default",
+        "default": "0"
+    },
+    {
+        "key": "ipbwi_hooks_log_email",
+        "default": ""
+    },
+    {
+        "key": "ipbwi_hooks_target_custom",
+        "default": ""
+    },
+    {
+        "key": "ipbwi_hooks_target_slaves",
+        "default": ""
+    }
+]

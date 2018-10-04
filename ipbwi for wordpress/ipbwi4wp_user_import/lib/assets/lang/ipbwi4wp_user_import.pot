@@ -1,0 +1,113 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: IPBWI for WordPress v4 - User Import\n"
+"POT-Creation-Date: 2016-06-18 19:01+0200\n"
+"PO-Revision-Date: 2016-06-18 18:57+0200\n"
+"Last-Translator: Matthias Reuter <info@straightvisions.com>\n"
+"Language-Team: Matthias Reuter <info@straightvisions.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: ../../..\n"
+"X-Poedit-WPHeader: ipbwi4wp_user_import.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: lib/assets/tpl/user_import.php:8 lib/modules/settings.php:126
+#: lib/modules/settings.php:127 lib/modules/settings.php:153
+msgid "User Import"
+msgstr ""
+
+#: lib/assets/tpl/user_import.php:9
+msgid ""
+"Just import all your IP.board user accounts to your WordPress site. Map IPB "
+"user groups to WP roles."
+msgstr ""
+
+#: lib/assets/tpl/user_import.php:15
+msgid "Total Members:"
+msgstr ""
+
+#: lib/assets/tpl/user_import.php:16
+msgid "Members per import cycle:"
+msgstr ""
+
+#: lib/assets/tpl/user_import.php:17
+msgid "Total Cycles:"
+msgstr ""
+
+#: lib/assets/tpl/user_import.php:23
+msgid "Total Groups:"
+msgstr ""
+
+#: lib/assets/tpl/user_import.php:28
+msgid "Total Sites:"
+msgstr ""
+
+#: lib/assets/tpl/user_import.php:32
+msgid "Map User Groups to WP Roles"
+msgstr ""
+
+#: lib/assets/tpl/user_import.php:49
+msgid "Save Settings"
+msgstr ""
+
+#: lib/assets/tpl/user_import.php:51 lib/assets/tpl/user_import.php:54
+msgid "Start Import"
+msgstr ""
+
+#: lib/assets/tpl/user_import.php:52
+msgid ""
+"Please do not close browser windows or tab until import has been finished."
+msgstr ""
+
+#: lib/assets/tpl/user_import.php:56
+msgid "Continue Import from Cycle"
+msgstr ""
+
+#: lib/modules/ajax.php:37
+msgid "Member"
+msgstr ""
+
+#: lib/modules/settings.php:28
+msgid "Groups to Roles Mapping"
+msgstr ""
+
+#: lib/modules/settings.php:31
+msgid "Map IPB Member Groups to WP Roles for import."
+msgstr ""
+
+#: lib/modules/settings.php:154
+msgid "Support"
+msgstr ""
+
+#: lib/modules/settings.php:155
+msgid "Documentation"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "IPBWI for WordPress v4 - User Import"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://ipbwi.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Bulk import users from IP.board to WordPress"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Matthias Reuter"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://straightvisions.com"
+msgstr ""

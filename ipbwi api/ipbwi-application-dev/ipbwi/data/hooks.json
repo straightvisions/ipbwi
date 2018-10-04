@@ -1,0 +1,18 @@
+{
+    "ipbwi_forums_topic_post": {
+        "type": "C",
+        "class": "\\IPS\\forums\\Topic\\Post"
+    },
+    "ipbwi_forums_topic": {
+        "type": "C",
+        "class": "\\IPS\\forums\\Topic"
+    },
+    "ipbwi_dispatcher_admin": {
+        "type": "C",
+        "class": "\\IPS\\Dispatcher\\Admin"
+    },
+    "ipbwi_member": {
+        "type": "C",
+        "class": "\\IPS\\Member"
+    }
+}

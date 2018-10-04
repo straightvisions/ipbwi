@@ -1,0 +1,13 @@
+.fa-sv-logo:before{
+	content:'';
+	display:block;
+	background-image: url( "{resource="logo.png" app="ipbwi" location="global"}" );
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 50px;
+	height: 55px;
+	opacity:0.7;
+}
+.acpAppList_active .fa-sv-logo:before{
+	opacity:1;
+}

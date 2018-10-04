@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language>
+ <app key="ipbwi" version="400014">
+  <word key="__app_ipbwi" js="0">IPBWI API</word>
+  <word key="__api_ipbwi_hello" js="0">Hello</word>
+  <word key="__api_ipbwi_groups" js="0">Groups</word>
+  <word key="__api_ipbwi_forums" js="0">Forums</word>
+  <word key="__api_ipbwi_reports" js="0">Reports</word>
+  <word key="__api_ipbwi_members" js="0">Members</word>
+  <word key="__api_ipbwi_pages" js="0">Pages</word>
+  <word key="__api_ipbwi_sql" js="0">SQL</word>
+  <word key="__api_ipbwi_topics" js="0">Topics</word>
+  <word key="__api_ipbwi_menu" js="0">Menu</word>
+  <word key="menutab__ipbwi" js="0">IPBWI</word>
+  <word key="menutab__ipbwi_icon" js="0">sv-logo</word>
+  <word key="menu__ipbwi_advanced" js="0">Advanced</word>
+  <word key="menu__ipbwi_advanced_hooks" js="0">Hooks</word>
+  <word key="ipbwi_hooks_activate_default" js="0">Activate Default Hooks</word>
+  <word key="ipbwi_hooks_activate_default_desc" js="0">IPBWI provides some default hooks.</word>
+  <word key="ipbwi_hooks_target_slaves" js="0">Slave notification</word>
+  <word key="ipbwi_hooks_target_slaves_desc" js="0">Send hooks to all IPS.connect slaves.</word>
+  <word key="ipbwi_hooks_target_custom" js="0">Custom URL</word>
+  <word key="ipbwi_hooks_target_custom_desc" js="0">Send hooks to a custom URL</word>
+  <word key="ipbwi_hooks_log_email" js="0">Hook trigger notification</word>
+  <word key="ipbwi_hooks_log_email_desc" js="0">Send hook data log via email</word>
+ </app>
+</language>

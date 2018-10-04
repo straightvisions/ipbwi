@@ -1,0 +1,7 @@
+<?php
+
+	// rename this file to curl_custom.php and insert custom curl options here.
+	// the current module is defined in var $module
+
+
+?>

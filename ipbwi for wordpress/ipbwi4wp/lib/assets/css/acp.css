@@ -1,0 +1,103 @@
+#wpwrap{
+	background-color:#FFF;
+}
+#ipbwi4wp_settings{
+	max-width: 700px;
+	margin: 100px auto;
+}
+#ipbwi4wp_settings *{
+	font-size:16px;
+}
+#ipbwi4wp_settings div{
+    margin-bottom: 10px;
+}
+#ipbwi4wp_settings h2{
+	font-size: 36px;
+	line-height: 130%;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #FFF;
+	margin-bottom:10px;
+}
+#ipbwi4wp_settings .ipbwi4wp_setting{
+	margin-bottom:20px;
+	overflow:hidden;
+}
+#ipbwi4wp_settings h3, #ipbwi4wp_settings .ipbwi4wp_setting_name{
+    font-size: 24px;
+    border-bottom: 1px solid #000;
+    line-height: 30px;
+	margin-bottom: 10px;
+	font-weight:normal;
+}
+#ipbwi4wp_settings .ipbwi4wp_setting_desc{
+	margin-bottom: 10px;
+}
+#ipbwi4wp_settings .ipbwi4wp_setting_value input{
+    width: 100%;
+	background-color: #000;
+	color: #FFF;
+}
+#ipbwi4wp_settings .ipbwi4wp_setting_checkbox .ipbwi4wp_setting_desc{
+	float:right;
+	width:calc(100% - 50px);
+}
+#ipbwi4wp_settings .ipbwi4wp_setting_checkbox .ipbwi4wp_setting_value{
+	float:left;
+}
+#ipbwi4wp_settings .ipbwi4wp_setting_value input[type="checkbox"]{
+    width: 40px;
+	height: 40px;
+	text-align:center;
+	background-color:#000;
+	margin-top:5px;
+}
+#ipbwi4wp_settings .ipbwi4wp_setting_value input[type=checkbox]:checked:before{
+    color: #FFF;
+    font-size: 30px;
+	line-height:40px;
+	margin:0;
+}
+.ipbwi_error{
+	background-color:#FF3300;
+	color:#FFF;
+	padding:10px;
+}
+.ipbwi_warning{
+	background-color:#FFAA00;
+	color:#FFF;
+	padding:10px;
+}
+.ipbwi_success{
+	background-color:#00AA00;
+	color:#FFF;
+	padding:10px;
+}
+#ipbwi4wp_settings .left{
+	width:33%;
+	display:inline-block;
+}
+#ipbwi4wp_settings .center{
+	width:33%;
+	text-align:center;
+	display:inline-block;
+}
+#ipbwi4wp_settings .right{
+	width:33%;
+	text-align:right;
+	display:inline-block;
+}
+#ipbwi4wp_extensions div{
+	display:inline-block;
+}
+#ipbwi4wp_extensions div a.not_installed{
+	opacity:0.5;
+}
+#ipbwi4wp_extensions div a.not_installed:hover{
+	opacity:0.8;
+}
+#ipbwi4wp_settings pre{
+	width: 100%;
+	overflow: auto;
+	height: 200px;
+}

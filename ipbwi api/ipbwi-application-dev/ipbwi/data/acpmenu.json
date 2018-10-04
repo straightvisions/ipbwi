@@ -1,0 +1,10 @@
+{
+    "advanced": {
+        "hooks": {
+            "tab": "ipbwi",
+            "controller": "hooks",
+            "do": "",
+            "restriction": null
+        }
+    }
+}
